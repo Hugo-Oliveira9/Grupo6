@@ -6,7 +6,7 @@
 /*  Index.html  */
 
 body{
-    background: linear-gradient(to right, #FFA726, #E65100); 
+    background: linear-gradient(to right, #FFA726, #E65100);
 }
 
 .navbar {
@@ -61,6 +61,8 @@ body{
 .homeTitulo{
     margin-top: 8%;
     margin-bottom: 6%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .homeLabel, .form-control, .navbar{
@@ -93,34 +95,41 @@ body{
     margin-top: 8px;
 }
 
-/* ---- */
+/* Destaque.html */
 
-#divCarrosel img {
-    margin-top: 3%;
-    max-height: 500px;
-    object-fit: cover;
+.container{
+    margin-top: 5%;
 }
 
-.carousel-item {
-    transition: transform 1.5s ease, opacity 1.5s ease;
-}
-
-.tituloEspaco h1{
-    display: flex;
-    justify-content: center;
-    font-family: 'fontNaruto';
-}
-.tituloEspaco{
-    margin: 3%;
-}
-
-.col-4 {
-    display: flex;
-    justify-content: center;
+.form-group{
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .row{
-    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-top: 2%
+}
+
+.carousel-item {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  
+}
+  
+  /* Ajuste opcional para evitar "piscadas" entre transições */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
 }
 
 .card {
