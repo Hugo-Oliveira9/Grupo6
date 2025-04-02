@@ -3,10 +3,116 @@
     src: url('/Fonte/njnaruto.ttf') format('truetype'); font-weight: normal;
 }
 
+/*  Index.html  */
+
 body{
     background-color: darkorange;
-    font-family: "njnaruto.ttf";
 }
+
+.navbar {
+    background-color: #343a40;
+    padding: 10px;
+  }
+  
+  .navbar .nav-link {
+    color: #fff !important;
+    font-size: 15px;
+    padding: 10px 20px; /* Espaçamento dos itens */
+    display: flex;
+    align-items: center; /* Alinha o texto e o ícone verticalmente */
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    background-color: #495057; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas no hover */
+  }
+  
+  .navbar .nav-link i {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    font-size: 18   px; /* Tamanho do ícone */
+    transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+  }
+  
+  .navbar .nav-link:hover i {
+    transform: scale(1.2); /* Aumenta o ícone no hover */
+  }
+  
+  .navbar .nav-item {
+    margin: 0 15px; /* Espaçamento entre os itens de navegação */
+  }
+  
+  /* Efeito de ativo (quando o item está selecionado) */
+  .nav-link.active {
+    background-color: darkorange;
+    color: #fff !important;
+    border-radius: 5px;
+  }
+  
+  .nav-link.active:hover {
+    background-color: darkorange;
+    color: #fff !important;
+  }
+  
+.homeTitulo h1{
+    font-family: 'FontNaruto';
+}
+
+.homeTitulo{
+    margin-top: 3%;
+}
+
+.homeLabel, .form-control, .navbar{
+    font-family: 'Times New Roman';
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 20px;
+}
+
+.botoes a {
+    text-align: center;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Times New Roman';
+}
+
+.botoes a:hover {
+    background-color: #495057; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento de tamanho no hover */
+}
+
+.aldeia{
+    width: 100%;
+    height: 80%;
+}
+
+.homeContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1%;
+    margin-top: 2%;
+}
+
+.chama{
+    margin-right: 5%;
+}
+
+.slogan{
+    font-family: 'FontNaruto';
+}
+
+h4{
+    font-style: italic;
+}
+
+/* ---- */
 
 #divCarrosel img {
     margin-top: 3%;
