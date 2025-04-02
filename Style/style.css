@@ -14,45 +14,42 @@ body{
     padding: 10px;
     display: flex;
     justify-content: center;
-  }
+}
   
-  .navbar .nav-link {
+.navbar .nav-link {
     color: #fff !important;
     font-size: 15px;
-    padding: 10px 20px; /* Espaçamento dos itens */
-    transition: background-color 0.3s ease;
-  }
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
   
-  .navbar .nav-link:hover {
-    background-color: #495057; /* Cor de fundo ao passar o mouse */
-    border-radius: 5px; /* Bordas arredondadas no hover */
-  }
+.navbar .nav-link:hover {
+    background-color: transparent;
+    color: #FFA726 !important;
+}
   
-  .navbar .nav-link i {
-    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
-    font-size: 18   px; /* Tamanho do ícone */
-    transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
-  }
+.navbar .nav-link i {
+    margin-right: 8px;
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
   
-  .navbar .nav-link:hover i {
-    transform: scale(1.2); /* Aumenta o ícone no hover */
-  }
+.navbar .nav-link:hover i {
+    transform: scale(1.2);
+    color: #FFA726 !important;
+}
   
-  .navbar .nav-item {
-    margin: 0 15px; /* Espaçamento entre os itens de navegação */
-  }
+.navbar .nav-item {
+    margin: 0 15px;
+}
   
-  /* Efeito de ativo (quando o item está selecionado) */
-  .nav-link.active {
-    background: linear-gradient(to right, #FFCC80, #FFA726, #FB8C00, #E65100);
+/* Removendo o fundo laranja do link ativo */
+.nav-link.active {
     color: #fff !important;
-    border-radius: 5px;
-  }
-  
-  .nav-link.active:hover {
-    background: linear-gradient(to right, #FFCC80, #FFA726, #FB8C00, #E65100);
-    color: #fff !important;
-  }
+    font-weight: bold;
+}
+
+
   
 .homeTitulo h1{
     font-family: 'FontNaruto';
@@ -97,6 +94,12 @@ body{
 
 /* Destaque.html */
 
+.destaqueTitulo{
+    display: flex;
+    justify-content: center;
+    font-family: 'FontNaruto';
+}
+
 .container{
     margin-top: 5%;
 }
@@ -111,25 +114,39 @@ body{
     margin-top: 2%
 }
 
+/* Ajustando a transição */
 .carousel-item {
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-  }
-
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-  
-  /* Ajuste opcional para evitar "piscadas" entre transições */
+
+/* Ajuste para transição de fade mais rápida */
 .carousel-fade .carousel-item {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
+    transition: opacity 0.5s ease-in-out;
+}
 
 .carousel-fade .carousel-item.active {
     opacity: 1;
+}
+
+/* Loja */
+
+.lojaTitulo{
+    display: flex;
+    justify-content: center;
+    font-family: 'FontNaruto';
+}
+
+.rowProdutos1, .rowProdutos2, .rowProdutos3{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.rowProdutos3{
+    margin-bottom: 2%;
 }
 
 .card {
@@ -173,6 +190,13 @@ body{
     padding: 10px;
     border-radius: 5px;
 }
+
+/* Footer */
+
+.footer{
+    margin-top: 13%;
+}
+
 
 .col-13{
     margin-top: 7%;
