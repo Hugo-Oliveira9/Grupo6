@@ -276,3 +276,16 @@ footer{
     text-decoration: none;
     padding:5px;
 }
+.descricao{
+    display: flex;
+    text-align:"justify";
+
+}
+.titulo{
+    background-color: #E65100;
+}
+.img_logo{
+    width: 250px;
+    background-color: #ffe4c4;
+    border-radius: 140px;    
+}
