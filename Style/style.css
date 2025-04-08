@@ -558,3 +558,10 @@ label{
 #btnPerfil{
     margin-left: 40%;
 }
+
+.labelCad{
+    color: black;
+    display: flex;
+    justify-content:left;
+    font-weight: normal;
+}

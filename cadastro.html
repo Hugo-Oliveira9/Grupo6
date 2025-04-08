@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="/Style/style.css">
- 
   <title>Document</title>
 </head>
- 
+
 <body>
-  </div>
   <div class="card-body">
     <h1 class="card-title">Dados pessoais</h1>
- 
+
     <form class="cadastro">
       <div class="form-row_email">
         <div class="form-group_email col-md-6">
-          <label for="inputEmail4">Email</label>
+          <label for="inputEmail4" class="labelCad">Email</label>
           <input type="email" class="form-controlCadastro" id="inputEmail4" placeholder="Email">
         </div>
         <div class="form-group_senha col-md-6">
-          <label for="inputPassword4">Senha</label>
+          <label for="inputPassword4"  class="labelCad">Senha</label>
           <input type="password" class="form-controlCadastro" placeholder="Senha">
         </div>
       </div>
       <div class="form-group_endereco1">
-        <label for="inputAddress">Endereço</label>
+        <label for="inputAddress" class="labelCad">Endereço</label>
         <input type="text" class="form-controlCadastro" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
       </div>
       <div class="form-group_endereco2">
-        <label for="inputAddress2">Endereço 2</label>
+        <label for="inputAddress2" class="labelCad">Endereço 2</label>
         <input type="text" class="form-controlCadastro" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
       </div>
       <div class="form-row_cidade">
         <div class="form-group_input col-md-6">
-          <label for="inputCity">Cidade</label>
-          <input type="text" class="form-controlCadastro" id="inputCity">
+          <label for="inputCity" class="labelCad">Cidade</label>
+          <input type="text" class="form-controlCadastro" id="inputCity" placeholder="Cidade">
         </div>
         <div class="form-group_input col-md-6">
-          <label for="inputEstado">Estado</label>
+          <label for="inputEstado" class="labelCad">Estado</label>
           <select id="inputEstado" class="form-controlCadastro">
             <option selected>Escolher...</option>
             <option>...</option>
           </select>
         </div>
         <div class="form-group_input col-md-6">
-          <label for="inputCEP">CEP</label>
-          <input type="text" class="form-controlCadastro" id="inputCEP">
+          <label for="inputCEP" class="labelCad">CEP</label>
+          <input type="text" class="form-controlCadastro" id="inputCEP" placeholder="CEP">
         </div>
       </div>
       <div class="form-group_termos">
@@ -63,14 +61,19 @@
             inventore accusamus. Obcaecati repellat alias ea, quod est fuga vitae?</p>
         </div>
       </div>
-      <a href="index.html" button type="submit" class="btn btn-primary">Entrar</button></a>
-      <a href="index.html" button type="submit" class="btn btn-primary">Voltar</button></a>
+      
+      <!-- Botão Entrar com ícone -->
+      <a href="destaque.html" class="btn btn-primary">
+        <i class="fas fa-sign-in-alt"></i> Entrar
+      </a>
+
+      <!-- Botão Voltar com ícone -->
+      <a href="index.html" class="btn btn-primary">
+        <i class="fas fa-arrow-left"></i> Voltar
+      </a>
     </form>
   </div>
-  </div>
-  </div>
-  </div>
- 
+
   <footer class="footer bg-dark text-white py-4">
     <div class="container text-center">
       <div class="row">
@@ -94,7 +97,7 @@
       <p class="mb-0">&copy; 2025 Naruto Fanpage Grupo6. Todos os direitos reservados.</p>
     </div>
   </footer>
- 
+
 </body>
+
 </html>
- 
