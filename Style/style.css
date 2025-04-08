@@ -593,3 +593,21 @@ label{
 .btn-lg{
     font-family: 'Times New Roman', Times, serif;
 }
+.titulo{
+    font-family: 'FontNaruto';
+    display: flex;
+    justify-content: center;
+  }
+  .descricao{
+    display: flex;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #E65100;
+    line-height: 150%;
+    border-radius: 5px;
+    font-size:35px;
+    border:1px solid #030303;
+    box-shadow: #030303 0px 0px 10px;
+    margin-top: 2%;
+  }
