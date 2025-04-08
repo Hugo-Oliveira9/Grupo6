@@ -1,101 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="/Style/style.css">
-  <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <title>Document</title>
 </head>
-
 <body>
-  <div class="card-body">
-    <h1 class="card-title">Dados pessoais</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quaerat, 
+        nesciunt animi aliquam, dicta, corporis tempore culpa temporibus vel voluptates 
+        inventore accusamus. Obcaecati repellat alias ea, quod est fuga vitae?</p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Dados pessoais</h5>
 
-    <form class="cadastro">
-      <div class="form-row_email">
-        <div class="form-group_email col-md-6">
-          <label for="inputEmail4" class="labelCad">Email</label>
-          <input type="email" class="form-controlCadastro" id="inputEmail4" placeholder="Email">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+          </div>
         </div>
-        <div class="form-group_senha col-md-6">
-          <label for="inputPassword4"  class="labelCad">Senha</label>
-          <input type="password" class="form-controlCadastro" placeholder="Senha">
+        <div class="form-group">
+          <label for="inputAddress">Endereço</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
         </div>
-      </div>
-      <div class="form-group_endereco1">
-        <label for="inputAddress" class="labelCad">Endereço</label>
-        <input type="text" class="form-controlCadastro" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
-      </div>
-      <div class="form-group_endereco2">
-        <label for="inputAddress2" class="labelCad">Endereço 2</label>
-        <input type="text" class="form-controlCadastro" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
-      </div>
-      <div class="form-row_cidade">
-        <div class="form-group_input col-md-6">
-          <label for="inputCity" class="labelCad">Cidade</label>
-          <input type="text" class="form-controlCadastro" id="inputCity" placeholder="Cidade">
+        <div class="form-group">
+          <label for="inputAddress2">Endereço 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
         </div>
-        <div class="form-group_input col-md-6">
-          <label for="inputEstado" class="labelCad">Estado</label>
-          <select id="inputEstado" class="form-controlCadastro">
-            <option selected>Escolher...</option>
-            <option>...</option>
-          </select>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Cidade</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputEstado">Estado</label>
+            <select id="inputEstado" class="form-control">
+              <option selected>Escolher...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputCEP">CEP</label>
+            <input type="text" class="form-control" id="inputCEP">
+          </div>
         </div>
-        <div class="form-group_input col-md-6">
-          <label for="inputCEP" class="labelCad">CEP</label>
-          <input type="text" class="form-controlCadastro" id="inputCEP" placeholder="CEP">
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Clique em mim
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="form-group_termos">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Li e aceito os termos e condições
-          </label>
-          <p>Eu aceito os Termos e Condições e a Política de Privacidade</p>.
-        </div>
-      </div>
-      
-      <!-- Botão Entrar com ícone -->
-      <a href="destaque.html" class="btn btn-primary">
-        <i class="fas fa-sign-in-alt"></i> Entrar
-      </a>
-
-      <!-- Botão Voltar com ícone -->
-      <a href="index.html" class="btn btn-primary">
-        <i class="fas fa-arrow-left"></i> Voltar
-      </a>
-    </form>
+        <a href="index.html" button  type="submit" class="btn btn-primary">Entrar</button></a>
+        <a href="index.html" button  type="submit" class="btn btn-primary">Voltar</button></a>
+      </form>
+    </div>
+    <div class="card-footer text-muted">
+      2 dias atrás
+    </div>
   </div>
 
-  <footer class="footer bg-dark text-white py-4">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-4">
-          <h5>Sobre Nós</h5>
-          <p>Somos um site dedicado a trazer informações sobre o universo de Naruto.</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Redes Sociais</h5>
-          <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-        </div>
-        <div class="col-md-4">
-          <h5>Contato</h5>
-          <p>Email: grupo6@naruto.com</p>
-          <p>Telefone: (11) 9999-9999</p>
-        </div>
-      </div>
-      <hr class="bg-light">
-      <p class="mb-0">&copy; 2025 Naruto Fanpage Grupo6. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+</div>
+
+
+
+</div>
 
 </body>
-
 </html>

@@ -1,167 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="/Style/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-	<title>Carrinho</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>carrinho</title>
 </head>
 
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="panel panel-success">
-					<div class="panel-heading">
-						<h2 class="painel-title">Sua compra</h2>
+
+</head>
+<body>
+	<!-- Barra de navegação e busca -->
+	<header>
+		<nav class="navbar-inverse navbar-fixed-top">
+
+			<!-- NAV collapse -->
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#novidades">Novidades</a></li>
+					<li><a href="#maisVendidos">Mais vendidos</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Camisetas
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Masculino</a></li>
+							<li><a href="#">Feminino</a></li>
+							<li><a href="#">Infantil</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Busque um produto"/>
 					</div>
-					<div class="panel-body">
-						<img src="Imagens/Roupas/Roupa-Naruto.jpg" alt="Produto" class="img-responsive img-thumbnail" />
-						<dl>
-							<dt>Nome</dt>
-							<dd>Camiseta Naruto</dd>
+					<input class="btn btn-default" type="submit" value="buscar"/>
+				</form>
+			<div> <!-- FIM NAV collapse -->
+		</nav>
+	</header><!-- FIM Barra de navegação e busca -->
 
-							<dt>Cor</dt>
-							<dd>Laranja</dd>
 
-							<dt>Tamanho</dt>
-							<dd>G</dd>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h2 class="painel-title">Sua compra</h2>
+						</div>
+						<div class="panel-body">
+							<img src="Imagens/Roupas/Roupa-Naruto.jpg" alt="Produto" class="img-responsive img-thumbnail"/>
+							<dl>
+								<dt>Nome</dt>
+								<dd>Camiseta Naruto</dd>
+								
+								<dt>Cor</dt>
+								<dd>Laranja</dd>
 
-							<dt>Preço</dt>
-							<dd>R$ 129,00</dd>
-						</dl>
+								<dt>Tamanho</dt>
+								<dd>G</dd>
+
+								<dt>Preço</dt>
+								<dd>R$ 129,00</dd>
+							</dl>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-8">
-				<form>
-					<!-- INFORMAÇÕES DO USER -->
-					<fieldset class="formCarrinho">
-					  <legend>Informações do usuário</legend>
-					  <div class="form-group">
-						<label for="nome">Nome Completo</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						  </div>
-						  <input id="nome" class="form-control" type="text" placeholder="Nome Completo">
-						</div>
-					  </div>
-					  <div class="form-group">
-						<label for="email">E-mail</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-envelope"></i></span>
-						  </div>
-						  <input id="email" class="form-control" type="email" placeholder="Email">
-						</div>
-					  </div>
-					  <div class="form-group">
-						<label for="cpf">C.P.F</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-id-card"></i></span>
-						  </div>
-						  <input id="cpf" class="form-control" type="text" placeholder="CPF">
-						</div>
-					  </div>
-					</fieldset>
-				  
-					<!-- FORMAS DE PAGAMENTO -->
-					<fieldset class="formPagamento">
-					  <legend>Formas de pagamento</legend>
-				  
-					  <div class="form-group">
-						<label for="bandeira">Bandeira do cartão</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-credit-card"></i></span>
-						  </div>
-						  <select name="bandeira" id="bandeira" class="form-control">
-							<option value="visa">Visa</option>
-							<option value="mastercard">MasterCard</option>
-							<option value="American">American Express</option>
-						  </select>
-						</div>
-					  </div>
-				  
-					  <div class="form-group">
-						<label for="num">Número</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-credit-card"></i></span>
-						  </div>
-						  <input id="num" type="text" class="form-control" placeholder="Número">
-						</div>
-					  </div>
-				  
-					  <div class="form-group">
-						<label for="validade">Validade</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-						  </div>
-						  <input type="month" class="form-control">
-						</div>
-					  </div>
-				  
-					  <div class="form-group">
-						<label for="cvv">CVV</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-lock"></i></span>
-						  </div>
-						  <input type="text" maxlength="3" class="form-control" placeholder="CVV">
-						</div>
-					  </div>
-				  
-					  <a href="final.html" class="btn btn-primary" id="btnCarrinho">
-						<span class="glyphicon glyphicon-thumbs-up"></span> Finalizar a compra
-					  </a>
+				<div class="col-sm-8">
+					<form>
+						<!-- INFORMAÇÕES DO USER -->
+						<fieldset>
+						<legend>Informações do usuário</legend>
+							<div class="form-group">
+								<label for="nome">Nome Completo</label>
+								<input id="nome" class="form-control" type="text">
+							</div>
+							<div class="form-group">
+								<label for="email">E-mail</label>
+								<div class="input-group">
+								
+									<input id="email" class="form-control" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="cpf">C.P.F</label>
+								<input id="cpf" class="form-control" type="text">
+							</div>
 
-					  <a href="loja.html" class="btn btn-primary" id="btnCarrinho">
-						<span class="glyphicon glyphicon-thumbs-up"></span> Voltar
-					  </a>
-					</fieldset>
-				  </form>				  
+							<div class="checkbox">
+								<label for="novidades">
+									<input id="novidades" type="checkbox" value="sim" checked="checked">
+									Quero receber novidades por e-mail.
+								</label>
+							</div>
+						</fieldset>
+
+						<!-- FORMAS DE PAGAMENTO -->
+						<fildset>
+							<legend>Formas de pagamento</legend>
+							<div class="form-group">
+								<label for="bandeira">Bandeira do cartão</label>
+								<select name="bandeira" id="bandeira" class="form-control">
+									<option value="visa">Visa</option>
+									<option value="mastercard">MasterCard</option>
+									<option value="American">American Express</option>
+								</select>
+
+								<div class="form-group">
+									<label for="num">Número</label>
+									<input id="num" type="text" class="form-control">
+								</div>
+
+								<div class="form-group">
+									<label for="validade">Validade</label>
+									<input type="month" class="form-control">
+								</div>
+
+								<div class="form-group">
+									<label for="cvv">CVV</label>
+									<input type="text" maxlength="3" class="form-control">
+								</div>
+							</div>
+						    <a href="final.html" button  class="btn btn-success btn-lg" type="submit">
+							<span class="glyphicon glyphicon-thumbs-up"></span>
+								Finalizar a compra</a>
+							</button>
+						</fildset>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
 	</main>
-
-	<footer class="footer bg-dark text-white py-4">
-		<div class="container text-center">
-		  <div class="row">
-			<div class="col-md-4">
-			  <h5>Sobre Nós</h5>
-			  <p>Somos um site dedicado a trazer informações sobre o universo de Naruto.</p>
-			</div>
-			<div class="col-md-4">
-			  <h5>Redes Sociais</h5>
-			  <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-			  <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-			  <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-			</div>
-			<div class="col-md-4">
-			  <h5>Contato</h5>
-			  <p>Email: grupo6@naruto.com</p>
-			  <p>Telefone: (11) 9999-9999</p>
-			</div>
-		  </div>
-		  <hr class="bg-light">
-		  <p class="mb-0">&copy; 2025 Naruto Fanpage Grupo6. Todos os direitos reservados.</p>
-		</div>
-	  </footer>
-
+			
+	<footer>
+		Avenida Exemplo n: 45, <br />
+		(11)1234-5678
+	</footer>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
-
 </html>
