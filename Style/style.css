@@ -490,3 +490,71 @@ label{
     border: none;
     font-family: 'Times New Roman';
 }
+
+/* -- perfil -- */
+
+.text-primary_perfil {
+    font-family: 'FontNaruto';
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.avatar {
+    border-radius: 50%;
+    margin-left: 50%;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #495057;
+    /* Cor cinza */
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+    margin-left: 65%;
+    width: 75%;
+}
+
+.custom-file-upload:hover {
+    background-color: #495057;
+    /* Cor cinza mais escuro no hover */
+    transform: scale(1.05);
+    /* Efeito de leve zoom */
+}
+
+/* Estilo para o texto explicativo */
+.file-input-container p {
+    font-size: 14px;
+    color: #495057;
+    margin-top: 10px;
+}
+
+.personal-info{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-groupPerfil{
+    margin: 2%;
+    margin-left: 15%;
+}
+
+.perfilGroup{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.Perfilrow{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#btnPerfil{
+    margin-left: 40%;
+}
