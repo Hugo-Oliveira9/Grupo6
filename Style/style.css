@@ -290,11 +290,14 @@ footer{
 
 /* pagina cadastro    */
 
-.cadastro{
+.cadastro {
     background-color: #fff !important;
     margin-left: 7%;
     margin-right: 7%;
     margin-bottom: 0%;
+    border: 2px solid #ccc; /* Borda simples de 2px, cor cinza claro */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Um pouco de espaço interno para os campos não ficarem colados */
 }
  
 .form-group_endereco1,.form-group_endereco2,.form-group_email, .form-group_senha,.form-group_input{
@@ -480,6 +483,4 @@ label{
     background-color: #495057; /* Cor de fundo ao passar o mouse */
     transform: scale(1.05); /* Leve aumento de tamanho no hover */
   }
-  .text-primary_perfil{
 
-  }
