@@ -267,7 +267,7 @@ footer{
     display: block;
 }
 .cmn-btn.btn-bg-1 {
-    background: #6176f6;
+    background: #495057;
     color: #fff;
     border: 2px solid transparent;
     border-radius:3px;
@@ -354,6 +354,7 @@ footer{
 /* Animação simples ao foco */
 .form-controlCadastro:focus {
     animation: pulse 0.3s ease-out;
+    background-color: #495057;
 }
 
 label{
@@ -456,11 +457,13 @@ label{
   .btn:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color:#495057 ;
   }
   
   /* Efeito de clique (press) nos botões */
   .btn:active {
     transform: translateY(2px);
+    background-color: #495057;
   }
   
   /* Efeito de animação nos botões ao serem carregados */
@@ -564,4 +567,29 @@ label{
     display: flex;
     justify-content:left;
     font-weight: normal;
+}
+
+.painel-title{
+    font-family: 'FontNaruto';
+}
+
+.formCarrinho{
+    display: flex;
+    justify-content: center;
+}
+.formPagamento{
+    margin-left: 10%;
+}
+
+.form-groupCarrinho{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.congratulation{
+    margin: 5%;
+}
+
+.btn-lg{
+    font-family: 'Times New Roman', Times, serif;
 }
