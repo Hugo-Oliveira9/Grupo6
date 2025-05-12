@@ -11,30 +11,8 @@
   <link rel="stylesheet" href="/Style/style.css">
   <title>Loja</title>
   <script src="/JavaScript/login.js"></script>
+  <script src="/JavaScript/exibirNome-Loja.js"></script>
 </head>
-
-<script>
-  window.onload = function () {
-    const usuario = localStorage.getItem("usuarioLogado");
-
-    if (!usuario) 
-    {
-      alert("Você precisa estar logado para acessar esta página.");
-      window.location.href = "index.html";
-    } 
-    else 
-    {
-      console.log("Usuário autenticado:", usuario);
-
-      // Exibe o email no H1
-      const titulo = document.getElementById("boasVindas");
-      if (titulo) {
-        titulo.innerText = `Bem-vindo, ${usuario}!`;
-      }
-    }
-  };
-</script>
-
 
 <body>
 
