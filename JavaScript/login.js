@@ -26,7 +26,10 @@ function login(event) {
 
     const dados = JSON.parse(usuarioSalvo)
 
-    if (dados.senha === senha) {
+    if (dados.senha === senha) 
+    {
+        localStorage.setItem("usuarioLogado",email)
+        
         alert("Login realizado com sucesso!")
         window.location.href = "loja.html"
         return true
@@ -36,8 +39,16 @@ function login(event) {
     }
 }
 
-function cadastrar() {
+function cadastrar() 
+{
     alert("Função de cadastro ainda não implementada.");
+}
+
+function logout()
+{
+    localStorage.removeItem("usuarioLogado")
+    alert("Logout realizado com sucesso!")
+    window.location.href = "index.html"
 }
 
 // Chama a função para garantir que os usuários padrão sejam adicionados ao localStorage
