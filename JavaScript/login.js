@@ -1,15 +1,7 @@
 const usuariosPadrao = [
-    {email: "usuario1@teste.com", senha: "1234"},
-    {email: "usuario2@teste.com", senha: "4321"}
+    {email: "usuario1@teste.com", senha: "1234", nome: "Usuario1", cidade:"Diadema", estado: "São Paulo", cep:"12345-678"},
+    {email: "usuario2@teste.com", senha: "4321", nome: "Usuario2", cidade:"Diadema", estado: "São Paulo", cep:"87654-321"}
 ];
-
-function adicionarUser() {
-    usuariosPadrao.forEach(user => {
-        if (!localStorage.getItem(user.email)) {
-            localStorage.setItem(user.email, JSON.stringify({senha: user.senha}));
-        }
-    });
-}
 
 function login(event) {
     event.preventDefault(); // Previne o comportamento de envio do formulário
@@ -41,7 +33,45 @@ function login(event) {
 
 function cadastrar() 
 {
-    alert("Função de cadastro ainda não implementada.");
+    const email = document.querySelector("#inputEmail").value.trim();
+    const senha = document.querySelector("#inputSenha").value.trim();
+    const nome = document.querySelector("#inputNome").value.trim();
+    const cidade = document.querySelector("#inputCity").value.trim();
+    const estado = document.querySelector("#inputEstado").value;
+    const cep = document.querySelector("#inputCEP").value.trim();
+    const termosAceitos = document.querySelector("#gridCheck").checked;
+
+    if(!email || !senha || !nome || !cidade || !estado || !cep)
+    {
+        alert("Preencha todos os campos!")
+        return
+    }
+
+    if(!termosAceitos)
+    {
+        alert("Você precisa aceitar os termos e condições.");
+        return;
+    }
+
+    if(localStorage.getItem(email))
+    {
+        alert("Este email já está cadastrado.");
+        return;
+    }
+
+    const novoUsuario = {
+        nome: nome,
+        senha: senha,
+        cidade: cidade,
+        estado: estado,
+        cep: cep
+    }
+
+    localStorage.setItem(email, JSON.stringify(novoUsuario))
+    alert("Cadastro realizado com sucesso!");
+
+    localStorage.setItem("usuarioLogado", email)
+    window.location.href = "index.html"
 }
 
 function logout()
@@ -50,6 +80,3 @@ function logout()
     alert("Logout realizado com sucesso!")
     window.location.href = "index.html"
 }
-
-// Chama a função para garantir que os usuários padrão sejam adicionados ao localStorage
-adicionarUser();

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="/Style/style.css">
+  <script src="/JavaScript/login.js"></script>
   <title>Cadastro</title>
 </head>
 
@@ -19,26 +20,26 @@
       <div class="form-row_email">
         <div class="form-group_email col-md-6">
           <label for="inputEmail4" class="labelCad">Email</label>
-          <input type="email" class="form-controlCadastro" id="inputEmail4" placeholder="Email">
+          <input type="email" class="form-controlCadastro" id="inputEmail" placeholder="Email">
         </div>
+
         <div class="form-group_senha col-md-6">
-          <label for="inputPassword4"  class="labelCad">Senha</label>
-          <input type="password" class="form-controlCadastro" placeholder="Senha">
+          <label for="inputSenha" class="labelCad">Senha</label>
+          <input type="password" class="form-controlCadastro" id="inputSenha" placeholder="Senha">
         </div>
       </div>
-      <div class="form-group_endereco1">
-        <label for="inputAddress" class="labelCad">Endereço</label>
-        <input type="text" class="form-controlCadastro" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
-      </div>
+
       <div class="form-group_endereco2">
-        <label for="inputAddress2" class="labelCad">Endereço 2</label>
-        <input type="text" class="form-controlCadastro" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+        <label for="inputNome" class="labelCad">Nome Completo</label>
+        <input type="text" class="form-controlCadastro" id="inputNome" placeholder="Informe seu nome">
       </div>
+
       <div class="form-row_cidade">
         <div class="form-group_input col-md-6">
           <label for="inputCity" class="labelCad">Cidade</label>
           <input type="text" class="form-controlCadastro" id="inputCity" placeholder="Cidade">
         </div>
+
         <div class="form-group_input col-md-6">
           <label for="inputEstado" class="labelCad">Estado</label>
           <select id="inputEstado" class="form-controlCadastro">
@@ -67,10 +68,9 @@
         </div>
       </div>
       
-      <!-- Botão Entrar com ícone -->
-      <a href="destaque.html" class="btn btn-primary">
-        <i class="fas fa-sign-in-alt"></i> Entrar
-      </a>
+      <button type="button" class="btn btn-success" onclick="cadastrar()">
+        <i class="fas fa-user-plus"></i> Cadastrar
+      </button>
 
       <!-- Botão Voltar com ícone -->
       <a href="index.html" class="btn btn-primary">

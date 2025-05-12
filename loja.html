@@ -17,10 +17,13 @@
   window.onload = function () {
     const usuario = localStorage.getItem("usuarioLogado");
 
-    if (!usuario) {
+    if (!usuario) 
+    {
       alert("Você precisa estar logado para acessar esta página.");
       window.location.href = "index.html";
-    } else {
+    } 
+    else 
+    {
       console.log("Usuário autenticado:", usuario);
 
       // Exibe o email no H1
@@ -65,8 +68,6 @@
     </ul>
   </nav>
 
-  <h1 id="boasVindas"></h1>
-
   <div class="row">
     <div class="col-12">
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -105,7 +106,7 @@
   </div>
 
   <div class="lojaTitulo">
-    <h1>Adquira nossos produtos!</h1>
+    <h1 id="boasVindas"></h1>
   </div>
   
   <div class="rowProdutos1"> <!--4 primeira linha-->
