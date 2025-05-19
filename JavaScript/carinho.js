@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function atualizarCarrinho() {
     listaCarrinho.innerHTML = '';
+
     if (carrinho.length === 0) {
       carrinhoVazio.classList.remove('d-none');
       return;
@@ -19,7 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     carrinho.forEach((item, index) => {
       const li = document.createElement('li');
       li.className = 'list-group-item d-flex justify-content-between align-items-center';
-      li.textContent = item.nome;
+
+      
+      let nome = typeof item === 'string'
+        ? item
+        : item.nome || item.produto?.nome || 'Produto sem nome';
+
+      li.textContent = nome;
 
       const btnRemover = document.createElement('button');
       btnRemover.className = 'btn btn-sm btn-outline-danger';

@@ -1,167 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/animate.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="/Style/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <meta charset="UTF-8">
+  <title>Meu Carrinho</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script defer src="JavaScript/carinho.js"></script>
+  <script src="JavaScript/loja.js"></script>
+  <link rel="stylesheet" href="/Style/style.css">
 
-	<title>Carrinho</title>
 </head>
+<body class="bg-light">
 
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="panel panel-success">
-					<div class="panel-heading">
-						<h2 class="painel-title">Sua compra</h2>
-					</div>
-					<div class="panel-body">
-						<img src="Imagens/Roupas/Roupa-Naruto.jpg" alt="Produto" class="img-responsive img-thumbnail" />
-						<dl>
-							<dt>Nome</dt>
-							<dd>Camiseta Naruto</dd>
+  <nav class="navbar navbar-dark bg-dark">
+    <img class="logomarca" src="Imagens/Logo/Logo2.png" alt="logo"> 
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="perfil.html"><i class="fas fa-user"></i>Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="destaque.html"><i class="fas fa-star"></i>Destaques</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="loja.html"><i class="fas fa-store"></i>Loja</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sobre.html"><i class="fas fa-info-circle"></i>Sobre-nos</a>
+      </li>
+      <li>
+        <a class="nav-link" href="https://pluto.tv/br/live-tv/64c92f965580090008084968"><i class="fas fa-store"></i> Assista Ao vivo</a> 
+     </li>
+     <li><a class="nav-link" href="carrinho.html" ><svg xmlns="http://www.w3.org/2000/svg" width="20.25" height="18" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+      <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0"/>
+    </svg>Carrinho</button></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" onclick="logout()">
+          <i class="fas fa-sign-out-alt"></i> Logout
+      </a>
+    </li>
+    </ul>
+  </nav>
 
-							<dt>Cor</dt>
-							<dd>Laranja</dd>
+  <div class="container mt-5">
+    <h1 class="mb-4">Carrinho de Compras</h1>
+    <div id="carrinho-vazio" class="alert alert-info d-none">Seu carrinho está vazio.</div>
+    <ul id="lista-carrinho" class="list-group mb-3"></ul>
+    <a href="final.html"> <button id="Finalizar"  class="btn btn-success">Finalizar Compras</button></a>
+    <a href="carrinho.html"><button id="limpar-carrinho" class="btn btn-danger">Limpar Carrinho</button></a>
+    <a href="loja.html" class="btn btn-secondary ml-2">Voltar à Loja</a>
+  </div>
+  </div> <!-- Fim do container -->
+	<script src="JavaScript/carrinho.js"></script>
 
-							<dt>Tamanho</dt>
-							<dd>G</dd>
-
-							<dt>Preço</dt>
-							<dd>R$ 129,00</dd>
-						</dl>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-8">
-				<form>
-					<!-- INFORMAÇÕES DO USER -->
-					<fieldset class="formCarrinho">
-					  <legend>Informações do usuário</legend>
-					  <div class="form-group">
-						<label for="nome">Nome Completo</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						  </div>
-						  <input id="nome" class="form-control" type="text" placeholder="Nome Completo">
-						</div>
-					  </div>
-					  <div class="form-group">
-						<label for="email">E-mail</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-envelope"></i></span>
-						  </div>
-						  <input id="email" class="form-control" type="email" placeholder="Email">
-						</div>
-					  </div>
-					  <div class="form-group">
-						<label for="cpf">C.P.F</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-id-card"></i></span>
-						  </div>
-						  <input id="cpf" class="form-control" type="text" placeholder="CPF">
-						</div>
-					  </div>
-					</fieldset>
-				  
-					<!-- FORMAS DE PAGAMENTO -->
-					<fieldset class="formPagamento">
-					  <legend>Formas de pagamento</legend>
-				  
-					  <div class="form-group">
-						<label for="bandeira">Bandeira do cartão</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-credit-card"></i></span>
-						  </div>
-						  <select name="bandeira" id="bandeira" class="form-control">
-							<option value="visa">Visa</option>
-							<option value="mastercard">MasterCard</option>
-							<option value="American">American Express</option>
-						  </select>
-						</div>
-					  </div>
-				  
-					  <div class="form-group">
-						<label for="num">Número</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-credit-card"></i></span>
-						  </div>
-						  <input id="num" type="text" class="form-control" placeholder="Número">
-						</div>
-					  </div>
-				  
-					  <div class="form-group">
-						<label for="validade">Validade</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-						  </div>
-						  <input type="month" class="form-control">
-						</div>
-					  </div>
-				  
-					  <div class="form-group">
-						<label for="cvv">CVV</label>
-						<div class="input-group">
-						  <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-lock"></i></span>
-						  </div>
-						  <input type="text" maxlength="3" class="form-control" placeholder="CVV">
-						</div>
-					  </div>
-				  
-					  <a href="final.html" class="btn btn-primary" id="btnCarrinho">
-						<span class="glyphicon glyphicon-thumbs-up"></span> Finalizar a compra
-					  </a>
-
-					  <a href="loja.html" class="btn btn-primary" id="btnCarrinho">
-						<span class="glyphicon glyphicon-thumbs-up"></span> Voltar
-					  </a>
-					</fieldset>
-				  </form>				  
-			</div>
-		</div>
-	</div>
-	</main>
-
-	<footer class="footer bg-dark text-white py-4">
-		<div class="container text-center">
-		  <div class="row">
-			<div class="col-md-4">
-			  <h5>Sobre Nós</h5>
-			  <p>Somos um site dedicado a trazer informações sobre o universo de Naruto.</p>
-			</div>
-			<div class="col-md-4">
-			  <h5>Redes Sociais</h5>
-			  <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-			  <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-			  <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-			</div>
-			<div class="col-md-4">
-			  <h5>Contato</h5>
-			  <p>Email: grupo6@naruto.com</p>
-			  <p>Telefone: (11) 9999-9999</p>
-			</div>
-		  </div>
-		  <hr class="bg-light">
-		  <p class="mb-0">&copy; 2025 Naruto Fanpage Grupo6. Todos os direitos reservados.</p>
-		</div>
-	  </footer>
-
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
-
 </html>

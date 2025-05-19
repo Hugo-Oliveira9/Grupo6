@@ -51,6 +51,24 @@
           <p class="mb-0">&copy; 2025 Naruto Fanpage Grupo6. Todos os direitos reservados.</p>
         </div>
       </footer>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const emailLogado = localStorage.getItem("usuarioLogado");
+
+        if (emailLogado) {
+            const usuario = JSON.parse(localStorage.getItem(emailLogado));
+            const nomeUsuario = usuario.nome;
+
+            const titulo = document.querySelector(".congratulation-contents-title");
+            if (titulo && nomeUsuario) {
+                titulo.textContent = `Obrigado por sua compra, ${nomeUsuario}!`;
+            }
+        }
+    });
+</script>
+
     
 </body>
 </html>
