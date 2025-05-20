@@ -1,16 +1,39 @@
-# Grupo6
+<h1 align="left">Grupo 6</h1>
 
-# 🛠 Tecnologias Utilizadas
- 
+###
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+<p align="left">Bem-vindo à Loja Naruto, o destino definitivo para todos os fãs do universo ninja!<br>Nosso site é especializado na venda de produtos oficiais e inspirados no anime e mangá Naruto. Com uma navegação fácil e segura, oferecemos uma experiência completa para quem deseja se conectar com o mundo de Konoha, seja como colecionador, cosplayer ou fã apaixonado.</p>
 
-# 👥Membros do Grupo
-Caroline de Carvalho Mendes,
-Gabriel da Silva Gutierres,
-Guilhermes Gomes da Silva,
-Hugo Aparecido de Oliveira Costa,
-Paulo Roberto Santos Elias e
-Priscila de Carvalho Mendes
+###
+
+<h2 align="left">👥Integrantes</h2>
+
+###
+
+<p align="left">👤Hugo Aparecido de Oliveira<br>👤Guilherme Gomes da Silva<br>👤Gabriel da Silva Gutierres<br>👤Paulo Roberto<br>👤Caroline de Carvalho Mendes<br>👤Priscila de Carvalho Mendes</p>
+
+###
+
+<h2 align="left">Professor</h2>
+
+###
+
+<p align="left">👤Bruno Zolorateff dos Santos</p>
+
+###
+
+<h2 align="left">Tecnlogias Utilizadas</h2>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+</div>
+
+###
