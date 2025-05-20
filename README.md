@@ -14,7 +14,7 @@
 
 ###
 
-<h2 align="left">Professor</h2>
+<h2 align="left">👨‍🏫Professor</h2>
 
 ###
 
@@ -22,7 +22,7 @@
 
 ###
 
-<h2 align="left">Tecnlogias Utilizadas</h2>
+<h2 align="left">🧑‍💻Tecnlogias Utilizadas</h2>
 
 ###
 
