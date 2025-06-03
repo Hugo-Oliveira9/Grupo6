@@ -2,9 +2,9 @@
 
 ###
 <h4>// Login do admin principal
-informações algumas informaçõe spodem ser alteradas//
 email:admin@admin.com
-senha:admin123
+senha:admin123<br>
+  informações algumas informaçõe spodem ser alteradas//
 
 
 //usuario de login admin com acesso//
