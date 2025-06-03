@@ -21,7 +21,7 @@ senha: 1234)</h6>
 
 ###
 
-<p align="left">👤Caroline de Carvalho Mendes<br>👤Gabriel da Silva Gutierres<br>👤Guilherme Gomes da Silva<br>👤Hugo Aparecido de Oliveira<br>👤Paulo Roberto<br>👤Priscila de Carvalho Mendes</p>
+<p align="left">👤Caroline de Carvalho Mendes<br>👤Gabriel da Silva Gutierres<br>👤Guilherme Gomes da Silva<br>👤Hugo Aparecido de Oliveira Costa<br>👤Paulo Roberto Santos Elias<br>👤Priscila de Carvalho Mendes</p>
 
 ###
 
