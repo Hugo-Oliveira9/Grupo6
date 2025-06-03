@@ -36,4 +36,15 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
 </div>
 
+
+<h4>// Login do admin principal
+//informações algumas informaçõe spodem ser alteradas
+email:admin@admin.com
+senha:admin123
+
+
+//usuario de login admin com acesso
+email: usuario1@teste.com
+senha: 1234</h4>
+
 ###
