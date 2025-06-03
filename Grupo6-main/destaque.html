@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Destaques</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark">
+    <img class="logomarca" src="Imagens/Logo/Logo2.png" alt="logo"> 
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="perfil.html"><i class="fas fa-user"></i> Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="destaque.html"><i class="fas fa-star"></i> Destaques</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="loja.html"><i class="fas fa-store"></i> Loja</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sobre.html"><i class="fas fa-info-circle"></i> Sobre-nos</a>
+      </li>
+      <li>
+        <a class="nav-link" href="https://pluto.tv/br/live-tv/64c92f965580090008084968"><i class="fas fa-coffee"></i> Assista Ao vivo</a> 
+     </li>
+     <li><a class="nav-link" href="carrinho.html" ><svg xmlns="http://www.w3.org/2000/svg" width="20.25" height="18" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+      <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0"/>
+    </svg>Carrinho</button></a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#" onclick="logout()">
+          <i class="fas fa-sign-out-alt"></i> Logout
+      </a>
+    </li>
+    </ul>
+  </nav>
+
+  <div class="row">
+    <div class="col-12">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <!-- Indicadores (bolinhas abaixo do carousel) -->
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/img/hokages.png" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/img/narutosanin.png" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/img/kabuto.png" alt="Terceiro Slide">
+          </div>
+        </div>
+
+        <!-- Botões de navegação -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="destaqueTitulo">
+    <h1>Destaques da historia de Naruto</h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/img/Wind-01.png" alt="Wind-01">
+          <div class="card-body">
+            <h5 class="card-title">Simbolo do pais do Vento</h5>
+            <p class="card-text">O País do vento tem como aldeia principal a aldeia da areia oculta (Sunagakure).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/img/Fire-01.png" alt="Fire">
+          <div class="card-body">
+            <h5 class="card-title">Símbolo do País Do Fogo</h5>
+            <p class="card-text">O País do Fogo tem como aldeia principal a aldeia da Folha oculta (Konohagakure).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/img/Water-01.png" alt="Water-01">
+          <div class="card-body">
+            <h5 class="card-title">Simbolo do Pais da agua</h5> 
+            <p class="card-text">O País da água tem como aldeia principal a aldeia da Nevoa (Kirigakure).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Sobre Nós</h5>
+          <p>Somos um site dedicado a trazer informações sobre o universo de Naruto.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Redes Sociais</h5>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="col-md-4">
+          <h5>Contato</h5>
+          <p>Email: grupo6@naruto.com</p>
+          <p>Telefone: (11) 9999-9999</p>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <p class="mb-0">&copy; 2025 Naruto Fanpage Grupo6. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

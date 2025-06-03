@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Painel de Administração</title>
+  <link rel="stylesheet" href="Style/style.css" />
+  <script src="/JavaScript/login.js"></script>
+</head>
+<body>
+  <script>
+  const usuario = JSON.parse(localStorage.getItem('usuarioLogado'));
+  if (!usuario || usuario.permissao !== 'admin') {
+    alert('Acesso negado. Apenas administradores!');
+    window.location.href = 'index.html';
+  }
+</script>
+   
+  
+  
+  <nav class="navbar navbar-dark bg-dark">
+        <img class="logomarca" src="Imagens/Logo/Logo2.png" alt="logo">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="perfil.html"><i class="fas fa-user"></i> Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="destaque.html"><i class="fas fa-star"></i> Destaques</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loja.html"><i class="fas fa-store"></i> Loja</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sobre.html"><i class="fas fa-info-circle"></i> Sobre-nos</a>
+            </li>
+            <li>
+                <a class="nav-link" href="https://pluto.tv/br/live-tv/64c92f965580090008084968"><i class="fas fa-coffee"></i> Assista Ao vivo</a>
+            </li>
+            <li class="nav-item">
+      <a class="nav-link" href="#" onclick="logout()">
+          <i class="fas fa-sign-out-alt"></i> Logout
+      </a>
+    </li>
+    </nav>
+
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Area de Administracao</h2>
+      <nav>
+        <ul>
+    
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header>
+        <h1>Gerenciamento de Usuários</h1>
+      </header>
+      
+      <section class="form-section">
+        <form id="userForm">
+          <input type="text" id="username" placeholder="Nome do usuário" required />
+          <select id="role">
+            
+          
+            <option value="user">Usuário</option>
+            <option value="admin">Administrador</option>
+          </select>
+          <div> <button type="submit" class="btn btn-dark btn-lg">
+                    <i></i> Cadastrar</div>
+        </form>
+      </section>
+      
+      <section class="search-section" >
+        <input type="text" id="searchInput" placeholder="Buscar usuário por nome..."  />
+       <button class="btn btn-dark btn-lg" onclick="searchUsers()" >Buscar</button>
+        <button class="btn btn-dark btn-lg" onclick="resetSearch()">Limpar</button>
+      </section>
+
+      <section class="table-section">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Permissão</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody"></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+
+      <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nós</h5>
+                    <p>Somos um site dedicado a trazer informações sobre o universo de Naruto.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p>Email: grupo6@naruto.com</p>
+                    <p>Telefone: (11) 9999-9999</p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p class="mb-0">&copy; 2025 Naruto Fanpage Grupo6. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+  <script src="JavaScript/admin.js"></script>
+</body>
+</html>
