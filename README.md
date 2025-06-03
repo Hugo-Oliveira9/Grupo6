@@ -1,7 +1,7 @@
 <h1 align="left">Grupo 6</h1>
 
-<h2>https://hugo-oliveira9.github.io/Grupo6/</h2> Link da web
-<h2>https://github.com/Hugo-Oliveira9/Grupo6.git</h2> link do repositorio
+<h5>https://hugo-oliveira9.github.io/Grupo6/</h5> Link da web
+<h5>https://github.com/Hugo-Oliveira9/Grupo6.git</h5> link do repositorio
 
 ###
 
