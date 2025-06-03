@@ -1,17 +1,6 @@
 <h1 align="left">Grupo 6</h1>
 
 ###
-<h6>// Login do admin principal
-(email:admin@admin.com
-senha:admin123)<br>
-  informações algumas informaçõe spodem ser alteradas//
-
-
-//usuario de login admin com acesso//
-(email: usuario1@teste.com
-senha: 1234)</h6>
-
-###
 
 <p align="left">Bem-vindo à Loja Naruto, o destino definitivo para todos os fãs do universo ninja!<br>Nosso site é especializado na venda de produtos oficiais e inspirados no anime e mangá Naruto. Com uma navegação fácil e segura, oferecemos uma experiência completa para quem deseja se conectar com o mundo de Konoha, seja como colecionador, cosplayer ou fã apaixonado.</p>
 
@@ -21,7 +10,7 @@ senha: 1234)</h6>
 
 ###
 
-<p align="left">👤Caroline de Carvalho Mendes<br>👤Gabriel da Silva Gutierres<br>👤Guilherme Gomes da Silva<br>👤Hugo Aparecido de Oliveira Costa<br>👤Paulo Roberto Santos Elias<br>👤Priscila de Carvalho Mendes</p>
+<p align="left">👤Hugo Aparecido de Oliveira<br>👤Guilherme Gomes da Silva<br>👤Gabriel da Silva Gutierres<br>👤Paulo Roberto<br>👤Caroline de Carvalho Mendes<br>👤Priscila de Carvalho Mendes</p>
 
 ###
 
@@ -46,8 +35,5 @@ senha: 1234)</h6>
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
 </div>
-
-
-
 
 ###

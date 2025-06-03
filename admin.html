@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Home</title>
-    <link rel="stylesheet" href="/Style/style.css">
-    <script src="/JavaScript/login.js" defer></script>
+  <title>Painel de Administração</title>
+  <link rel="stylesheet" href="Style/style.css" />
+  <script src="/JavaScript/login.js"></script>
 </head>
-
 <body>
-
-    <nav class="navbar navbar-dark bg-dark">
+  <script>
+  const usuario = JSON.parse(localStorage.getItem('usuarioLogado'));
+  if (!usuario || usuario.permissao !== 'admin') {
+    alert('Acesso negado. Apenas administradores!');
+    window.location.href = 'index.html';
+  }
+</script>
+   
+  
+  
+  <nav class="navbar navbar-dark bg-dark">
     <img class="logomarca" src="Imagens/Logo/Logo2.png" alt="logo"> 
     <ul class="nav justify-content-center">
       <li class="nav-item">
@@ -46,44 +52,59 @@
     </ul>
   </nav>
 
-    <div class="homeTitulo">
-        <center><h1>Bem-vindo ao nosso site sobre Naruto</h1></center>
-    </div>
-    <div>
-        <center><img src="Imagens/naruto-naruto-shippuden.gif" alt="gif animado"></center>
-    </div>
 
-    <form onsubmit="login(event)">
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Area de Administracao</h2>
+      <nav>
+        <ul>
+    
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header>
+        <h1>Gerenciamento de Usuários</h1>
+      </header>
+      
+      <section class="form-section">
+        <form id="userForm">
+          <input type="text" id="username" placeholder="Nome do usuário" required />
+          <select id="role">
+            
+          
+            <option value="user">Usuário</option>
+            <option value="admin">Administrador</option>
+          </select>
+          <div> <button type="submit" class="btn btn-dark btn-lg">
+                    <i></i> Cadastrar</div>
+        </form>
+      </section>
+      
+      <section class="search-section" >
+        <input type="text" id="searchInput" placeholder="Buscar usuário por nome..."  />
+       <button class="btn btn-dark btn-lg" onclick="searchUsers()" >Buscar</button>
+        <button class="btn btn-dark btn-lg" onclick="resetSearch()">Limpar</button>
+      </section>
 
-        <div class="form-group">
-            <label class="homeLabel" for="exampleInputEmail1">Email/Login</label>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                </div>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Exemplo@gmail.com" required>
-            </div>
+      <section class="table-section">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Permissão</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody"></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
 
-            <label class="homeLabel mt-2" for="exampleInputPassword1">Senha</label>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                </div>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" required>
-            </div>
 
-            <div class="botoes mt-3">
-                <button type="submit" class="btn btn-dark btn-lg">
-                    <i class="fas fa-sign-in-alt"></i> Entrar
-                </button>
-                <a href="cadastro.html" class="btn btn-dark btn-lg">
-                    <i class="fas fa-user-plus"></i> Cadastre-se
-                </a>
-            </div>
-        </div>
-    </form>
-
-    <footer class="footer bg-dark text-white py-4">
+      <footer class="footer bg-dark text-white py-4">
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-4">
@@ -107,9 +128,6 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <script src="JavaScript/admin.js"></script>
 </body>
 </html>
