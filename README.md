@@ -1,6 +1,17 @@
 <h1 align="left">Grupo 6</h1>
 
 ###
+<h4>// Login do admin principal
+informações algumas informaçõe spodem ser alteradas//
+email:admin@admin.com
+senha:admin123
+
+
+//usuario de login admin com acesso//
+email: usuario1@teste.com
+senha: 1234</h4>
+
+###
 
 <p align="left">Bem-vindo à Loja Naruto, o destino definitivo para todos os fãs do universo ninja!<br>Nosso site é especializado na venda de produtos oficiais e inspirados no anime e mangá Naruto. Com uma navegação fácil e segura, oferecemos uma experiência completa para quem deseja se conectar com o mundo de Konoha, seja como colecionador, cosplayer ou fã apaixonado.</p>
 
@@ -37,14 +48,6 @@
 </div>
 
 
-<h4>// Login do admin principal
-//informações algumas informaçõe spodem ser alteradas
-email:admin@admin.com
-senha:admin123
 
-
-//usuario de login admin com acesso
-email: usuario1@teste.com
-senha: 1234</h4>
 
 ###
