@@ -1,5 +1,8 @@
 <h1 align="left">Grupo 6</h1>
 
+<h2>https://hugo-oliveira9.github.io/Grupo6/</h2> Link da web
+<h2>https://github.com/Hugo-Oliveira9/Grupo6.git</h2> link do repositorio
+
 ###
 
 <p align="left">Bem-vindo à Loja Naruto, o destino definitivo para todos os fãs do universo ninja!<br>Nosso site é especializado na venda de produtos oficiais e inspirados no anime e mangá Naruto. Com uma navegação fácil e segura, oferecemos uma experiência completa para quem deseja se conectar com o mundo de Konoha, seja como colecionador, cosplayer ou fã apaixonado.</p>
