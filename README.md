@@ -1,15 +1,15 @@
 <h1 align="left">Grupo 6</h1>
 
 ###
-<h4>// Login do admin principal
-email:admin@admin.com
-senha:admin123<br>
+<h6>// Login do admin principal
+(email:admin@admin.com
+senha:admin123)<br>
   informações algumas informaçõe spodem ser alteradas//
 
 
 //usuario de login admin com acesso//
-email: usuario1@teste.com
-senha: 1234</h4>
+(email: usuario1@teste.com
+senha: 1234)</h6>
 
 ###
 
